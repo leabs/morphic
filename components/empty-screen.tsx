@@ -3,20 +3,20 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
+    heading: 'What are the key components of a successful grant proposal?',
+    message: 'What are the key components of a successful grant proposal?'
   },
   {
-    heading: 'Is the Apple Vision Pro worth buying?',
-    message: 'Is the Apple Vision Pro worth buying?'
+    heading:
+      'Can you identify any common weaknesses in grant proposals that I should avoid?',
+    message:
+      'Can you identify any common weaknesses in grant proposals that I should avoid?'
   },
   {
-    heading: 'How does the Vercel AI SDK work?',
-    message: 'How does the Vercel AI SDK work?'
-  },
-  {
-    heading: 'Tesla vs Rivian',
-    message: 'Tesla vs Rivian'
+    heading:
+      'How can I effectively align my project goals with the funding agency’s objectives?',
+    message:
+      'How can I effectively align my project goals with the funding agency’s objectives?'
   }
 ]
 export function EmptyScreen({
