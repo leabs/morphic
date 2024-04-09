@@ -3,20 +3,16 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: 'What are the key components of a successful grant proposal?',
-    message: 'What are the key components of a successful grant proposal?'
+    heading: 'Keys to successful grant proposal?',
+    message: 'Keys to successful grant proposal?'
   },
   {
-    heading:
-      'Can you identify any common weaknesses in grant proposals that I should avoid?',
-    message:
-      'Can you identify any common weaknesses in grant proposals that I should avoid?'
+    heading: 'Common weaknesses in grants to avoid?',
+    message: 'Common weaknesses in grants to avoid?'
   },
   {
-    heading:
-      'How can I effectively align my project goals with the funding agency’s objectives?',
-    message:
-      'How can I effectively align my project goals with the funding agency’s objectives?'
+    heading: 'How can I align my goals with grant terms?',
+    message: 'How can I align my goals with grant terms?'
   }
 ]
 export function EmptyScreen({
@@ -34,7 +30,7 @@ export function EmptyScreen({
             <Button
               key={index}
               variant="link"
-              className="h-auto p-0 text-base"
+              className="max-w-fit h-auto p-0 text-base word-break"
               name={message.message}
               onClick={async () => {
                 submitMessage(message.message)
