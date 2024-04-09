@@ -93,6 +93,7 @@ export function ChatPanel() {
       <form onSubmit={handleSubmit} className="max-w-2xl w-full px-6">
         <div className="relative flex items-center w-full">
           <Input
+            autoComplete="off"
             ref={inputRef}
             type="text"
             name="input"
