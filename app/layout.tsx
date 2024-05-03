@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter as FontSans } from 'next/font/google'
-import { AI } from './action'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/theme-provider'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { Sidebar } from '@/components/sidebar'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -16,6 +16,7 @@ const title = 'Grantee.ai Platform'
 const description = 'An AI assistant that helps you write grant proposals.'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://morphic.sh'),
   title,
   description,
   openGraph: {
@@ -31,6 +32,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   minimumScale: 1,
   maximumScale: 1
 }
@@ -50,7 +53,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <AI>{children}</AI>
+          {children}
+          <Sidebar />
           <Footer />
         </ThemeProvider>
       </body>
